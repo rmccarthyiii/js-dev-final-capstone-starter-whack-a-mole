@@ -1,29 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="./src/styles.css">
+    <title>Whack-A-Molbot!</title>
+      <link rel="stylesheet" href="./src/styles.css">
+      <link rel="icon" href="data:,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <h1></h1>
-    <div>
-      <div>
-        <h2>Click start to play!</h2>
+    <header>
+      <section id="content">
+        <h1 id="title">Shoot-A-Molbot</h1>
+          <div>
+            <h2 id="heading1"><button id="start">Start game</button></h2>
+          </div>
+          <div>
+            <h2>Score: <span id="score">0</span></h2>
+          </div>
+          <div>
+            <h2 id="heading2"><span id="timer">0</span> seconds remaining</h2>
+          </div>
+      </section>
+    </header>
+  <main>
+    <!-- main game interaction -->
+    <section class="game">
+        <h2 id="blink">Shoot as fast as you can!</h2>
+        <audio src="./assets/song.mp3" id="song"></audio>
+        <audio src="./assets/hit_sound.mp3" id="hit"></audio>
+      <div class="grid">
+        <div id="hole0" class="hole">
+          <div id="mole0" class="mole"></div>
+        </div>
+        <div id="hole1" class="hole">
+          <div id="mole1" class="mole"></div>
+        </div>
+        <div id="hole2" class="hole">
+          <div id="mole2" class="mole"></div>
+        </div>
+        <div id="hole3" class="hole">
+          <div id="mole3" class="mole"></div>
+        </div>
+        <div id="hole4" class="hole">
+          <div id="mole4" class="mole"></div>
+        </div>
+        <div id="hole5" class="hole">
+          <div id="mole5" class="mole"></div>
+        </div>
+        <div id="hole6" class="hole">
+          <div id="mole6" class="mole"></div>
+        </div>
+        <div id="hole7" class="hole">
+          <div id="mole7" class="mole"></div>
+        </div>
+        <div id="hole8" class="hole">
+          <div id="mole8" class="mole"></div>
+        </div>
       </div>
-      <div>
-        <h2>score: <span id="score">0</span></h2>
-      </div>
-      <div>
-          <h2><span id="timer">0</span> seconds left.</h2>
-      </div>
-    </div>
-    <div class="grid">
-      <div id="hole0" class="hole">
-        <div id="mole0" class="mole"></div>
-      </div>
-      <div id="hole1" class="hole">
-        <div id="mole1" class="mole"></div>
-      </div>
-      <!--TODO: Add the missing holes and moles. -->
-    </div>
+    </section>
+  </main>
     <script src="./src/index.js"></script>
   </body>
 </html>
